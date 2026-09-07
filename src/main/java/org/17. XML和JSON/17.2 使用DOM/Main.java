@@ -53,10 +53,10 @@
 // - Attribute：代表一个元素的某个属性。
 
 //使用DOM API解析一个XML文档的代码如下：
-InputStream input = Main.class.getResourceAsStream("/book.xml");
-DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
-DocumentBuilder db = dbf.newDocumentBuilder();
-Document doc = db.parse(input);
+//InputStream input = Main.class.getResourceAsStream("/book.xml");
+//DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+//DocumentBuilder db = dbf.newDocumentBuilder();
+//Document doc = db.parse(input);
 
 
 
