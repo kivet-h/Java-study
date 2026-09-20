@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Spring Bean 配置文件，定义应用中各组件（Bean）的创建方式和依赖关系 -->
+<!-- 声明 XML Schema 实例命名空间，用于 XSD 校验 -->
+<!-- 指定 XSD 模式文件的位置，用于校验本配置文件的合法性 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                 https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 定义 userService Bean：实例化 UserService 类，并注入 mailService 依赖 -->
+    <bean id="userService" class="com.learnjava.bean.service.UserService">
+        <!-- 通过 property 标签将 mailService Bean 注入到 UserService 的 mailService 属性中（setter 注入） -->
+        <property name="mailService" ref="mailService"/>
+    </bean>
+
+    <!-- 定义 mailService Bean：实例化 MailService 类，无额外依赖注入 -->
+    <bean id="mailService" class="com.learnjava.bean.service.MailService"/>
+</beans>
