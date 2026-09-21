@@ -1,5 +1,5 @@
 /**
- * 22.1.2 装配Bean
+ * 22.1.2 装配Bean （示例代码：src/main/java/com/learnjava/bean）
  */
 
 // 我们前面讨论了为什么要使用Spring的IoC容器，因为让容器来为我们创建并装配Bean能获得很大的好处，那么到底如何使用IoC容器？装配好的Bean又如何使用？
@@ -284,7 +284,7 @@
 //
 /// / 导入 User 实体类，用于表示用户对象
 //import com.learnjava.bean.service.User;
-//// 导入 UserService 服务类，用于调用用户相关业务逻辑
+/// / 导入 UserService 服务类，用于调用用户相关业务逻辑
 //import com.learnjava.bean.service.UserService;
 //// 导入 Spring 的 ApplicationContext 接口，用于获取 Spring 容器中的 Bean
 //import org.springframework.context.ApplicationContext;
