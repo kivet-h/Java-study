@@ -1,0 +1,5 @@
+package com.learnjava.dingZhiBean;
+
+public interface Validator {
+    void validate(String email, String password, String name);
+}
