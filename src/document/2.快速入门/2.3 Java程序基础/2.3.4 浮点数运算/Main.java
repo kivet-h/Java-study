@@ -73,7 +73,7 @@
 //要修复这个计算结果，可以将24 / 5改为24.0 / 5。由于24.0是浮点数，因此，计算除法时自动将5提升为浮点数。
 //public class Main {
 //    public static void main(String[] args) {
-//        double d = 1.2 + 24.0 / 5; // 结果不是 6.0 而是 5.2
+//        double d = 1.2 + 24.0 / 5; // 结果为6.0
 //        System.out.println(d); // 1.2 + 4.8 = 6.0
 //    }
 //}
